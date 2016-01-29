@@ -53,7 +53,7 @@ namespace SpotifyKiller
             rl.Enabled = false;
             rl.Direction = NET_FW_RULE_DIRECTION_.NET_FW_RULE_DIR_OUT;
             rl.Name = "SpotifyKiller";
-            rl.RemoteAddresses = "173.194.0.0-173.194.255.255,216.58.192.0-216.58.223.255,74.125.0.0-74.125.255.255,68.232.0.0-68.232.255.255";
+            rl.RemoteAddresses = "173.194.0.0-173.194.255.255,216.58.192.0-216.58.223.255,74.125.0.0-74.125.255.255";//,68.232.0.0-68.232.255.255";
             rl.ApplicationName = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Spotify\Spotify.exe";
 
             policy.Rules.Add(rl);
