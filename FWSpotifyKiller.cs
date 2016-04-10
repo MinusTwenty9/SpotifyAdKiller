@@ -12,6 +12,16 @@ namespace SpotifyKiller
         private static INetFwMgr mgr;
         private static INetFwPolicy2 policy;
 
+        private static string[] ip_ranges = new string[] 
+        {
+            "173.194.0.0-173.194.255.255","216.58.192.0-216.58.223.255",
+            "74.125.0.0-74.125.255.255","31.13.76.0-31.13.76.255",
+            "173.194.0.0-173.194.255.255","216.58.192.0-216.58.223.255",
+            "74.125.0.0-74.125.255.255","2.16.4.0-2.16.4.255",
+            "74.125.136.0-74.125.136.255","173.194.65.0-173.194.65.255",
+            "23.235.43.0-23.235.43.255","194.68.165.0-194.68.165.255"
+        };
+
         public static void Initialize()
         {
             mgr = (INetFwMgr)Activator.CreateInstance(net_fw_mgr_type);
@@ -47,13 +57,17 @@ namespace SpotifyKiller
             if (!Is_Firewall_Enabled()) return;
             if (Spotify_Killer_Rule_Exists()) return;
 
+            string ips = "";
+            for (int i = 0; i < ip_ranges.Length; i++)
+                ips += ip_ranges[i] + (i+1 == ip_ranges.Length ? "" : ",");
+
             INetFwRule rl = (INetFwRule)Activator.CreateInstance(Type.GetTypeFromProgID("HNetCfg.FWRule"));
             rl.Action = NET_FW_ACTION_.NET_FW_ACTION_BLOCK;
             rl.Description = "Blocks spotify ads (audio and visual)";
             rl.Enabled = false;
             rl.Direction = NET_FW_RULE_DIRECTION_.NET_FW_RULE_DIR_OUT;
             rl.Name = "SpotifyKiller";
-            rl.RemoteAddresses = "173.194.0.0-173.194.255.255,216.58.192.0-216.58.223.255,74.125.0.0-74.125.255.255";//,68.232.0.0-68.232.255.255";
+            rl.RemoteAddresses = ips;
             rl.ApplicationName = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\Spotify\Spotify.exe";
 
             policy.Rules.Add(rl);
