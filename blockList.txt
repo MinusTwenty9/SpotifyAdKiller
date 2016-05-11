@@ -1,0 +1,126 @@
+###################################################################
+###########SPOTIFY adblock ip adresses and url#####################
+###################################################################
+
+Name:    googlesyndication.com
+Addresses:  2a00:1450:4013:c01::63
+          74.125.136.105
+          74.125.136.104
+          74.125.136.103
+          74.125.136.99
+          74.125.136.147
+          74.125.136.106
+
+Name:    audio-sp-ash.spotify.com
+Address:  194.132.173.241
+
+Name:    prod.spotify.map.fastlylb.net
+Address:  23.235.43.246
+Aliases:  audio-fa.spotify.com
+          beta.spotify.map.fastly.net
+		  heads-fab.spotify.com
+		  
+Name:    cs283.wpc.teliasoneracdn.net
+Address:  68.232.34.151
+Aliases:  audio-ec.spotify.com
+		
+	  
+Addresses:  217.12.15.54
+          217.12.15.83
+Aliases:  ads.yahoo.com
+
+Name:    rlcdn.com
+Address:  216.74.32.88
+
+Name:    doubleclick.net
+Addresses:  2a00:1450:400e:802::200e
+          216.58.212.206
+		  
+Name:    pubmatic.com
+Address:  162.248.18.210
+
+Name:    ravenjs.com
+Address:  23.235.43.133
+
+Name:    partnerad.l.doubleclick.net
+Address:  216.58.212.226
+Aliases:  pubads.g.doubleclick.net
+		  googleadservices.com
+		  
+Name:    partnerad.l.doubleclick.net
+Address:  216.58.212.130
+Aliases:  securepubads.g.doubleclick.net
+Aliases:  partner.googleadservices.com
+
+Name:    gads.pubmatic.com
+Address:  198.47.127.21
+
+Name:    e6603.g.akamaiedge.net
+Address:  23.206.90.143
+Aliases:  ads.pubmatic.com
+          pubmatic.edgekey.net
+
+Name:    googleadapis.l.google.com
+Name:    video-ad-stats.googlesyndication.com
+Addresses:  2a00:1450:4013:c01::5f
+          74.125.136.95
+Aliases:  imasdk.googleapis.com
+
+Name:    pagead-googlehosted.l.google.com
+Addresses:  2a00:1450:400e:800::2001
+          216.58.212.129
+Aliases:  tpc.googlesyndication.com
+
+Name:    audio-sp.spotify.com
+Name:    audio-sp-sto.spotify.com
+Address:  193.182.244.241
+
+Name:    ws-origin.audioscrobbler.com
+Address:  64.30.224.206
+
+Name:    scontent.xx.fbcdn.net
+Addresses:  2a03:2880:f006:21:face:b00c:0:3
+          31.13.64.21
+
+Name:    bsams.eyeblaster.akadns.net
+Address:  80.252.91.41
+		  80.252.91.24
+		  
+Name:    liverail.c10r.facebook.com
+Address:  31.13.64.4
+
+Name:    tags.wdc.bluekai.com
+Address:  173.192.220.64
+
+Name:    uip.semasio.net
+Address:  77.66.54.155
+
+Name:    d.turn.com.akadns.net
+Address:  46.228.164.13
+
+Name:    adserver.video
+Address:  51.255.231.130
+
+Name:    ps.eyeota.net
+Address:  54.93.77.193
+
+don't know where I spotted these two....(added though)
+2a00:1450:400e:800::200e,
+2a00:1450:4013:c01::69,
+
+//not added yet....
+cause ?????
+194.14.177.35	
+194.132.198.149
+194.132.196.226
+88.221.254.184
+52.16.68.126
+88.221.254.88
+54.228.191.164
+54.76.97.143
+52.29.215.104
+54.246.130.89
+52.19.114.209
+52.19.210.4
+104.16.25.235
+194.132.196.228
